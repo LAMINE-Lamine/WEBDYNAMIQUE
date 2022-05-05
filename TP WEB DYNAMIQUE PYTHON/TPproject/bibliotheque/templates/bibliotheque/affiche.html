@@ -2,11 +2,15 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>ajout d'un livre</title>
+<title>affichage classe</title>
 </head>
 <body>
 
-<p> vous avez ajouté le livre suivant {{livre}} {{livre.id}} </p>
+<p> details de la classe suivant {{classe}} {{classe.id}} </p>
+ <li> {{a}}  </li>
+{% for a in liste2 %}
+            <li> {{a}}  </li>
+{%endfor%}
 
 
 </body>

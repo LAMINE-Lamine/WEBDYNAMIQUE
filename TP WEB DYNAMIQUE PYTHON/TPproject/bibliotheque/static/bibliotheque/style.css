@@ -1,19 +1,44 @@
 
- body{
+body{
     background-image: url(04045_800x480.jpg);
-    height: 100%;
+    background-size:cover;
     width: 100%;
+    padding: 0%;
+    margin: 0%;
     }
 
- .bouton{
-    background-color:black;
-    padding:200px;
-    margin-left:20%;
+html{
+  scroll-behavior: smooth;
+  margin:0;
+}
+
+
+.oriantationpage{
+ background-color:black;
+ height:100px;
+
+}
+nav{
+    position: sticky;
+    top: 0;
 
 
 }
 
 
+
+a{
+  text-decoration: none;}
+
+.oriantationpage>button{
+margin-left:12%;
+margin-top:5px
+}
+
+.oriantationpage>button>a{
+font-size:55px;
+
+}
 
 
 
