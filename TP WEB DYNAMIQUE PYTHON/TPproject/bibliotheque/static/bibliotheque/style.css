@@ -13,11 +13,7 @@ html{
 }
 
 
-.oriantationpage{
- background-color:black;
- height:100px;
 
-}
 nav{
     position: sticky;
     top: 0;
@@ -39,4 +35,42 @@ margin-top:5px
 font-size:55px;
 
 }
+.oriantationpage{
+    background-color:black;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
+
+
+}
+.onglet{
+
+}
+.list{
+    list-style-type:none;
+}
+
+.onglet .list{
+    display:inline-block;
+    padding:35px 25px;
+}
+
+.oriantationpage a{
+    color:white;
+    transition:0.3s;
+
+}
+.oriantationpage a:hover{
+   color:red;
+}
+
+li {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+li button{
+    align-items:center;
+}
