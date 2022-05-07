@@ -15,7 +15,7 @@
      <nav class="oriantationpage">
          <div class="Lesclassesdarmes">Les classes d'armes</div>
          <ul class="onglet" id="list">
-            <li><a href="#debut">home</a></li>
+            <li><a href="/bibliotheque/">home</a></li>
             <li> <a href="ajout/">classe d'arme</a></li>
             <li><a href="ajout2/">arme</a></li>
 
@@ -26,8 +26,8 @@
 
 
         {% for l in liste %}
-            <li> la classe darme de la personne est la classe {{l.titre}} <button name="aff"><a href="affiche/{{l.id}}"> afficher les détails  </a></button> <button name="supp"><a href="delete/{{c.id}}"> effacer  </a></button>
-                <button name="upd"><a href="update/{{c.id}}"> update </a></button></li>
+            <li> la classe darme de la personne est la classe {{l.titre}} <button name="aff"><a href="affiche/{{l.id}}"> afficher les détails  </a></button> <button name="supp"><a href="delete/{{l.id}}"> effacer  </a></button>
+                <button name="upd"><a href="update/{{l.id}}"> update </a></button></li>
 
      <button name="button"><a href="ajout/"> ajouter une arme </a></button>
         {%endfor%}

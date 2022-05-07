@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>creation classe</title>
-</head>
-<body>
+{% extends "bibliotheque/main.html" %}
+{% block title %}
+ARME
+{% endblock %}
+{% block content %}
+
 <form method="post" action="/bibliotheque/traitement/">
 {% csrf_token %}
 {{ form.as_ul }}
@@ -12,5 +11,4 @@
 <input type="submit" value="envoyer␣les␣données">
 </form>
 
-</body>
-</html>
+{% endblock %}
