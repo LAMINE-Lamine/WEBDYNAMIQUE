@@ -3,12 +3,9 @@
 ARME
 {% endblock %}
 {% block content %}
-
-<form method="post" action="/bibliotheque/traitement/">
-{% csrf_token %}
-{{ form.as_ul }}
-
-<input type="submit" value="envoyer␣les␣données">
-</form>
-
+    <form action="/bibliotheque/traitement/" method="POST">
+    {% csrf_token %}
+    {{ form.as_ul }}
+    <input type="submit" value="Send Data"/>
+    </form>
 {% endblock %}

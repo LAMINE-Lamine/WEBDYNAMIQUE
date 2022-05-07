@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>creation arme</title>
-</head>
-<body>
-<form method="post" action="/bibliotheque/traitement2/">
-{% csrf_token %}
-{{ form.as_ul }}
-
-<input type="submit" value="envoyer␣les␣données">
-</form>
-
-
-</body>
-</html>
+{% extends "bibliotheque/main.html" %}
+{% block title %}
+ARME
+{% endblock %}
+{% block content %}
+    <form action="/bibliotheque/traitement2/" method="POST">
+    {% csrf_token %}
+    {{ form.as_ul }}
+    <input type="submit" value="Send Data"/>
+    </form>
+{% endblock %}
