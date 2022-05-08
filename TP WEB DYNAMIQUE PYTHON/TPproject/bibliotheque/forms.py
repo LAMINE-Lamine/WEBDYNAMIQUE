@@ -24,6 +24,5 @@ class ArmeForm(ModelForm):
             'porte': _('Porte'),
 
 
-
         }
 
