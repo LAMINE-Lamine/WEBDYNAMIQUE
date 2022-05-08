@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bibliotheque/style.css' %}">
+
 </head>
 <body>
-{% load static %}
-<link rel="stylesheet" href="{% static 'bibliotheque/style.css' %}">
+
+
+
 
 
 
@@ -25,14 +30,9 @@
           </nav>
 
 
-        {% for l in liste %}
-            <li> la classe d'arme de la personne est la classe {{l.titre}} <button name="aff"><a href="affiche/{{l.id}}"> afficher les détails  </a></button> <button name="supp"><a href="delete/{{l.id}}"> effacer  </a></button>
-                <button name="upd"><a href="update/{{l.id}}"> update </a></button></li>
+      {% block content %}
 
-     <button name="button"><a href="ajout/"> ajouter une arme </a></button>
-        {%endfor%}
-
-
+      {% endblock %}
 
 </body>
 </html>

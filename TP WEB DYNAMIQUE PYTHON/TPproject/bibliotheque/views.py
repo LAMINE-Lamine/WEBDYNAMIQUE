@@ -26,9 +26,9 @@ def traitement(request):
         return render(request,"bibliotheque/ajout.html",{"form": cform})
 
 
-def main(request):
+def home(request):
     liste = list(models.Classe.objects.all())
-    return render(request, 'bibliotheque/main.html', {'liste': liste})
+    return render(request, 'bibliotheque/home.html', {'liste': liste})
 
 def affiche(request, id):
     classe = models.Classe.objects.get(pk=id)
