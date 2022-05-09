@@ -5,7 +5,7 @@ ARME
 {% block content %}
         {% for l in liste %}
     <ul class="global_descip">
-            <li> la classe d'arme de la personne est la classe '{{l.titre}}' </li>
+            <li> la classe d'arme de la personne est  '{{l.titre}}' </li>
              <li class="descrip"> Despcription de la classe :{{l.resume}} </li>
 
             <li> <button name="aff"><a href="affiche/{{l.id}}"> afficher les détails  </a></button> <button name="supp"><a href="delete/{{l.id}}"> effacer  </a></button>
