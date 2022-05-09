@@ -23,3 +23,6 @@ class Arme(models.Model):
     def __str__(self):
         chaine = f"{self.nom_d_arme} {self.createur} {self. date_creation}{self.nombre_d_exemplaire}"
         return chaine
+
+    def dico(self):
+        return{"nom_d_arme": self.nom_d_arme, "createur": self.createur,"date_creation": self.date_creation, "nombre_d_exemplaire": self.nombre_d_exemplaire,"porte":self.porte, "classe": self.classe}

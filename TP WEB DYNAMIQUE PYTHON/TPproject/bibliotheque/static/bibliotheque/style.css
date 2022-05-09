@@ -10,8 +10,8 @@ body{
 
 html{
 
-  scroll-behavior: smooth;
-  margin:0;
+    scroll-behavior: smooth;
+    margin:0;
 }
 
 
@@ -25,23 +25,23 @@ nav{
 
 a{
 
-  text-decoration: none;}
+    text-decoration: none;}
 
 .oriantationpage>button{
 
-margin-left:12%;
-margin-top:5px
+    margin-left:12%;
+    margin-top:5px
 }
 
 .oriantationpage>button>a{
 
-font-size:55px;
+    font-size:55px;
 
 }
 
 .oriantationpage{
 
-    background-color:black;
+    background-color:#D39E3B ;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -88,7 +88,7 @@ li {
 
 .global_descip{
 
-    background-color:gray;
+    background-color:#C8A54D;
     display:flex;
     margin-left:30%;
     justify-content:center;

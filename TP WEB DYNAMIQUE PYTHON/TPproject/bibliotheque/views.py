@@ -87,12 +87,9 @@ def delete2(request, id):
     return HttpResponseRedirect("/bibliotheque/")
 
 def update2(request, id):
-    mform = ArmeForm(request.POST)
-    if mform.is_valid():
-        arme = mform.save()
-        return HttpResponseRedirect("/bibliotheque/")
-    else:
-        return render(request, "bibliotheque/update.html", {"form": mform})
+    arme = models.Arme.objects.get(pk=id)
+    mform = ArmeForm(arme.dico())
+    return render(request, "bibliotheque/update.html", {"form": mform})
 
 def traitementupdate2(request, id):
     mform = ArmeForm(request.POST)

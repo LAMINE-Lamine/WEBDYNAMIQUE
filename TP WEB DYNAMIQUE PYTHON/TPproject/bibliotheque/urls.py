@@ -10,8 +10,8 @@ urlpatterns = [
     path('traitementupdate/<int:id>/',views.traitementupdate),
     path('ajout2/', views.ajout2),
     path('traitementupdate2/', views.traitementupdate2),
-    path('delete2/', views.delete2),
+    path('delete2/<int:id>', views.delete2),
     path('traitement2/', views.traitement2),
-    path('update2/', views.update2),
+    path('update2/<int:id>', views.update2),
 
 ]

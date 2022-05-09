@@ -8,8 +8,8 @@ ARME
  <li> {{a}}  </li>
 {% for a in liste2 %}
             <li> {{a}}  </li>
- <li>  <button name="supp"><a href="delete/{{a.id}}"> effacer  </a></button>
-                <button name="upd"><a href="update/{{a.id}}"> update </a></button></li>
+ <li>  <button name="supp"><a href="/delete2/{{a.id}}"> effacer  </a></button>
+                <button name="upd"><a href="/update2/{{a.id}}"> update </a></button></li>
 {%endfor%}
 
 {% endblock %}
