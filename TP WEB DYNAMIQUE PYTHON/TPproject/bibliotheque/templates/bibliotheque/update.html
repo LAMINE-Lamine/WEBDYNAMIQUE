@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>update</title>
-</head>
-<body>
+{% extends "bibliotheque/main.html" %}
+{% block title %}
+ARME
+{% endblock %}
+{% block content %}
 <form method="post" action="/bibliotheque/traitementupdate/{{id}}/">
 {% csrf_token %}
 {{ form.as_ul }}
 <input type="submit" value="envoyer les données"/>
 </form>
-</body>
-</html>
+{% endblock %}

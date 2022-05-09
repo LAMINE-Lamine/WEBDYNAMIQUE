@@ -15,7 +15,7 @@ class ArmeForm(ModelForm):
 
     class Meta:
         model = models.Arme
-        fields = ('nom_d_arme','createur','nombre_d_exemplaire','date_creation','porte','classe')
+        fields = ('nom_d_arme','createur','nombre_d_exemplaire','date_creation','porte','classe','image')
         labels = {
             'nom_d_arme': _("Nom d'arme"),
             'createur': _('Createur'),

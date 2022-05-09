@@ -19,10 +19,12 @@ class Arme(models.Model):
     date_creation = models.DateField(blank=True, null=True)
     nombre_d_exemplaire = models.IntegerField(blank=False)
     porte = models.IntegerField(blank=False)
+    image = models.URLField(null=True)
+
 
     def __str__(self):
         chaine = f"{self.nom_d_arme} {self.createur} {self. date_creation}{self.nombre_d_exemplaire}"
         return chaine
 
     def dico(self):
-        return{"nom_d_arme": self.nom_d_arme, "createur": self.createur,"date_creation": self.date_creation, "nombre_d_exemplaire": self.nombre_d_exemplaire,"porte":self.porte, "classe": self.classe}
+        return{"nom_d_arme": self.nom_d_arme, "createur": self.createur,"date_creation": self.date_creation, "nombre_d_exemplaire": self.nombre_d_exemplaire,"porte":self.porte, "classe": self.classe,"image": self.image}
